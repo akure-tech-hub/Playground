@@ -1,0 +1,10 @@
+/* Component styles */
+button.ath-btn {
+   padding: 10px 15px;
+   margin: 2px;
+   background: #2A6CB2;
+   color: #FFF;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+}

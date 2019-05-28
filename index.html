@@ -4,9 +4,64 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Rubik&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/prism.css">
+   <link rel="stylesheet" href="./css/ath.css">
    <title>Document</title>
+   <style>
+      body {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+         justify-content: center; 
+         align-items: center;
+         width: 100%;
+         height: auto;
+      }
+      ol {
+         display: flex;
+         flex-flow: row wrap;
+      }
+      ol li {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: #FFF;
+         font-size: 20px;
+         text-align: center;
+         width:  100px;
+         height: 100px;
+      }
+      .nova {
+         font-family: 'Rubik', sans-serif;
+      }
+      .asans {
+         font-family: 'Alegreya Sans SC', sans-serif;
+      }
+      h1 {
+         font-weight: 400;
+      }
+
+   </style>
 </head>
 <body>
-   <h1>Welcome to akure tech hub</h1>
+   <h1 class="asans">Welcome to akure tech hub</h1>
+   <div>
+      <ol>
+            <li style="background: #0C1E31;"> #0C1E31 </li>
+            <li style="background: #143251;"> #143251 </li>
+            <li style="background: #2A6CB2;"> #2A6CB2 </li>
+            <li style="background: #B1C9E3; color: #0C1E31"> #B1C9E3 </li>
+            <li style="background: #EBF1F8; color: #0C1E31;">#EBF1F8</li>
+      </ol>
+   </div>
+   <div>
+      <h1>Button</h1>
+      <button class="ath-btn">
+         Click me
+      </button>
+      <pre><code class="language-markup">&lt;button class="ath-btn"&gt; Click me &lt;/button&gt;</code></pre>
+   </div>
+   <script src="./js/prism.js"></script>
 </body>
 </html>
