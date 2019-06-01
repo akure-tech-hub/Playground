@@ -8,3 +8,59 @@ button.ath-btn {
    border-radius: 3px;
    cursor: pointer;
 }
+.ath-header {
+   height: 60px;
+   padding: 0px;
+   width: 100%;
+   /* background: #2A6CB2; */
+   border-bottom: 1px solid #CCC;
+}
+.ath-logo {
+   width: 50px; height: 50px;
+   overflow: hidden;
+   object-fit: contain;
+}
+.mobile-menu {
+   /* color: #FFF; */
+}
+.logo-text {
+   font-weight: 500;
+}
+.ath-aside {
+   width: 250px;
+   border-right: 1px solid #CCC;
+   height: 100vh;
+   margin-left: 0;
+   background: #fcfcfc;
+}
+.ath-aside-close {
+   width: 250px;
+   border-right: 1px solid #CCC;
+   height: 100vh;
+   background: #fcfcfc;
+   margin-left: -300px;
+}
+/* Link Definations */
+.ath-link {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   text-decoration: none;
+   padding: 5px 15px;
+}
+.ath-avatar-holder {
+   width: 70px; height: 70px;
+   border-radius: 35px;
+   border: 1px solid #333;
+   background: #FFF;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+.ath-avatar {
+   width: 60px; height: 60px;
+   border-radius: 30px; 
+   border: none;
+}
+i.icon {
+   padding: 0 10px 0 10px; margin: -5px 0 0 0;
+}
