@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akure tech hub - Techies playground</title>
+    <link rel="stylesheet" href="./css/ath-layout.css">
+    <link rel="stylesheet" href="./css/ath.css">
+    <link rel="stylesheet" href="./css/ath-icon.css">
+    <style>
+    #header {
+	background-color:#2A6CB2;
+	background-position: center;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bolder;
+	text-tranform:upper;
+	color: white;
+	padding: 0px 60px 60px 0px;
+}
+
+    #known {
+        background-color: #B1C9E3 ;
+        background-postion: center;
+        text-align: center;
+        font-family:'Times New Roman;
+        font-weight: bolder;
+        color: white;
+        padding: 40px;
+        margin: 20px 20px -20px 0px;
+    }
+
+/*boxes*/
+#boxes {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	margin-left: 300px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 20px;
+	border: #e8491d 2px solid;
+	margin-right: 10px;
+	background: url( img6.jpg);
+}
+
+#boxes .box img{
+	width: 150px;
+	height: 200px;
+	border: #e8491d 2px solid;
+	border-radius: 50%;
+}
+
+#boxes .box:hover{
+	background-color: #e8491d;
+	color: black;
+	cursor: pointer;
+}
+
+#permit {
+	background-color:#2A6CB2;
+	background-position: center;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bolder;
+	text-tranform:upper;
+	color: white;
+	padding: 0px 50px -50px 0px;
+}
+
+
+
+
+        
+    </style>
+</head>
+<body class="flex column nowrap">
+    <header class="flex align-items-center ath-header">
+        <div class="flex col-lg-5">
+            <a href="" class="mobile-menu">
+                <i class="icon material-icons">menu</i>
+            </a>
+            <div class="logo-text">
+                <p>Akure Techies Dashboard</p>
+            </div>
+        </div>
+        
+        <div class="flex col-lg-1 justify-content-flex-end">
+            <img class="ath-logo" src="./images/logo.svg" alt="">
+        </div>
+    </header>
+    <div class="flex nowrap">
+        <aside class="flex column align-items-center ath-aside">
+            <div>
+                <div class="flex justify-content-center align-items-center ath-avatar-holder">
+                    <img class="ath-avatar" src="./images/avatar.jpg" alt="">
+                </div>
+            </div>
+            <nav class="col-lg-6">
+                <menu class="flex column nowrap">
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">assessment</i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">account_circle</i>
+                        Profile
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">settings</i>
+                        Settings
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">date_range</i>
+                        Events
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">forum</i>
+                        Support
+                    </a>
+                </menu>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                    <div id="header">
+                            <h1><b>TechHub Event Page</b></h1>
+                            <p><i>|WELCOME TO OUR EVENT PAGE</i></p>
+                        </div>
+
+                        <div id="known">
+                            <h3>OUR ACTIVITIES</h3>
+                            <ul type= "square">
+                                    <li><b><a href="#hme" title="Upcmin">UPCOMING EVENTS.</a></b></li>
+                                    <li><b><a href="#hme" title="Onging">ONGOING EVENTS.</a></b></li>
+                            </ul>
+                        </div>
+
+            </section>
+            <div id="permit">
+                <h3>UPCOMING EVENTS </h3>
+                <h3>Here we have our upcoming events.</h3>
+            </div>
+            <section id= "boxes">
+                    <div class= "just">
+                       <div class= "box">
+                        <img src= "avatar.jpg" />
+                        <a href= "HERNOVATE.html" target="_blank" title="WELCOME TO HERNOVATE!">
+                        <h3>HERNOVATE!</h3>
+                        <p> DATE: 1ST AUGUST, 2019</p>
+                        </div>
+                
+                        <div class= "box">
+                            <img src= "avatar.jpg" />
+                        <a href= "FUTURE OF WORK.html" target="_blank" title=" THE FUTURE OF WORK!">
+                        <h3>FUTURE OF WORK</h3>
+                        <p>DATE: 3RD JUNE,2018</p>
+                        </div>
+                
+                        <div class= "box">
+                           <img src= "avatar.jpg" />
+                           <a href= "DESIGN CLASSES.html" target="_blank" title="WE DESIGN!">
+                        <h3>DESIGN PATTERNS</h3>
+                        <p>DATE: 4TH JULY, 2018</p>
+                        </div>
+                         </div>
+                    </section>
+                
+                
+        </main>
+    </div>
+<script src="./js/main.js"></script>
+</body>
+</html>
