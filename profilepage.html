@@ -2,40 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akure tech hub - Techies playground</title>
+    <link rel="stylesheet" href="./css/ath-layout.css">
+    <link rel="stylesheet" href="./css/ath.css">
+    <link rel="stylesheet" href="./css/ath-icon.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+      ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
-    <!--link local styling-->
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
-    
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-   <style>
-       
-       
-       body{
-           font-family: sans-serif;
-        margin: 0;
-       max-width: 100vw;
-       overflow-x: hidden;
-           
-       }
-       header{
-           margin: 0;
-           width: 100%;
-           height: 50px;
-       }
+     main{
+         flex-basis: auto;
+         width: 70%;
+         max-width: 70% ;
+         right: 0;
+         margin: auto;
+         position: relative;
+         top: 0;
+         padding: 3%;
+         overflow-y: scroll;
+         height: 100%;
+         
+     }
+     #inline{
+      display: inline-flex;
+         width: 100%;
+         max-width: 100% ;
+         right: 0;
+         height: auto;
+         position: relative;
+         margin: ;
+         top: 0;
+     }
+     
+     
        section#top{
            position: relative;
-           
-           width: 80%;
-           max-width: 80%;font-family: 'Montserrat', sans-serif;
+           width: 100%;
+           max-width: 100%;
+           font-family: 'Montserrat', sans-serif;
            font-family: 'Righteous', cursive;
-           border: 1px solid grey;
            margin: auto;
+           top: 0;
+           left: 0;
+           box-sizing: content-box;
            text-align: center;
        }
        section#top div#user-img img{
@@ -46,42 +61,50 @@
        }
        section#top div#user-img{
            position: relative;
-           width: 15%;
+           width: 30%;
+           min-width: 70px;
            margin:3% auto 2%;
            
        }
-       section#top h1{
-           position: relative;
-           width: 50%;
-           height: 50%;
-           font-size: 2.5em;
-           margin:1% auto ;
-           text-align: center;
-       }
        section#top h3{
            position: relative;
-           width: 50%;
+           width: 27%;
            height: 50%;
            font-weight: 1;
-           font-size: 1.5em;
-           margin: 1% auto ;
-           text-align: center;
+           font-size: 1em;
+          margin: auto 2%;
+           text-align: start;
        }
        div#socials{
            width: 50%;
-           margin:4% auto 0;
+           margin:10% auto;
            position: relative;
            text-decoration: none;
            text-align: center;
-           font-size: 3.5em;
-           display: inline-block;
+           
+           
+           display: inline-flex;
+           justify-content: space-between;
        }
      div#socials a{
            text-decoration: none;
            color: grey;
            margin:1%;
-        }
-     
+         font-size: 2em;
+         }
+        
+     fa-facebook:hover{
+        color:darkblue;
+          
+         }
+     fa-twitter:hover{
+        color:deepskyblue;
+          
+         }
+     fa-instagram:hover{
+        color: red;
+          
+         }
      ul#skills{
            position: relative;
            width: auto;
@@ -107,9 +130,12 @@
            justify-content: space-around;
            width: 100%;
            height: auto;
-           margin: 5% 0 0 0;
            position: relative;
+           bottom: 0;
            flex-basis: 33.35%;
+           background-color: rgb(13,13,13,.4);
+           left: 0;
+           margin: 0;
        }
        
        span.icon{
@@ -119,22 +145,40 @@
            width: 33.5%;
            padding: 15px 0 15px 0;
            cursor: pointer;
-           font-size: 3.5em;
-            font-weight: 1000;
+           font-size: .5em;
+           font-weight: 1000;
+           transition:.2s linear;
        }
-       div.contents{
+       span.icon:hover {
+           color:#B1C9E3;
+       }
+     div#info-container{
+           width: 33.5%;
+           position: relative;
+           word-wrap: normal;
+           margin:auto;
+           text-align:start;
+           padding: 0px;
+       } 
+       div.con{
            width: 100%;
            max-width: 100%;
-           position: relative;
+           opacity: 0;
+           display: contents;
+           position:absolute;
            overflow:hidden;
-           margin:auto;
-           float: left;
+           min-height: 250px;
+           margin: auto;
+           padding: 20px;
+           height: auto;
+           transition: 1s linear;
            text-align: center;
-           display: inline;
            padding: 10px;
+           top: 0;
+           background-color: transparent;
        } 
-       .con{
-           
+       #content{
+           height: auto;
            width: 70%;
            position:relative;
            word-wrap: break-word;
@@ -143,113 +187,238 @@
            transform: translate(-50%);
            display: block;
            float: left;
-           height: 100px;
-           text-align: center;
+           top: 0px;
            flex-grow: 1;
+           background-color: transparent;
            transition: .6s ease-in;
        }
-       #cp2{
-           right: -140%;
-           word-wrap: break-word;
+     .icon i.material-icons{
+        
+         text-align: center;
+         position: relative;
+         
+         margin: auto;
+         width: 33.5%;
+        font-size: 7em; 
        }
-    </style> 
-</head>
-<body>
-<header></header>    
+     .features{
+         
+         text-align:start;
+         position: relative;
+         margin: auto;
+         width: 100%;
+         font-size: 1.5em;
+         display: inline-flex;
+         
+       }
+     .features i{
+         
+         text-align: center;
+         position: relative;
+         margin: 0;
+         font-size: 2em;
+         transition:.5s ease;
+         cursor: pointer;
+         line-height: 1.5em;
+         
+       }
+     .features:hover> i{
+       color:  #2A6CB2;
+         
+       }
+     
+      .features h1{
+           height: 50%;
+          margin: auto 0;
+           font-size: 1.4em;
+          line-height: 1em;
+           }
+      .out{
+          position: relative;
+     width: 100%;   
+     }
+     
+     
+    @media only screen and (max-width : 750px) {
+    .out, .icons, .con{
+            transform: scale(.8);
+        }
+     
+        
+      }
+     
+    </style>
+    
+    
+    </head>
+<body class="flex column nowrap">
+    <header class="flex align-items-center ath-header">
+        <div class="flex col-lg-5">
+            <a href="" class="mobile-menu">
+                <i class="icon material-icons">menu</i>
+            </a>
+            <div class="logo-text">
+                <p>Akure Techies Dashboard</p>
+            </div>
+        </div>
+        
+        <div class="flex col-lg-1">
+            <img class="ath-logo" src="./images/logo.svg" alt="">
+        </div>
+    </header>
+    <div id="inline">
+        <aside class="flex column align-items-center ath-aside" style="height: auto; ">
+            <div>
+                <div class="flex justify-content-center align-items-center ath-avatar-holder">
+                    <img class="ath-avatar" src="./images/avatar.jpg" alt="">
+                </div>
+            </div>
+            <nav class="col-lg-6">
+                <menu class="flex column nowrap">
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">assessment</i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">account_circle</i>
+                        Profile
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">settings</i>
+                        Settings
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">date_range</i>
+                        Events
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">forum</i>
+                        Support
+                    </a>
+                </menu>
+            </nav>
+        </aside>
+        <main>
+
     <section id="top">
-<div id="user-img"><img src="Asset/css/images/img.png">
+<div id="user-img"><img src="images/img.png">
     
 <!--<form enctype="multipart/form-data" action="" method="POST">
 <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
 Choose a file to upload: <input name="uploadedfile" type="file"/><br />
 
-</form>--></div>
-<h1>Full Name</h1>
+</form>-->
+        </div>    
+        <div id="info-container">
+        <div class="out">
+        <div class="features">
+        <i class="material-icons">person</i>     <h1>FullName</h1>
+        </div>
+        </div>
+        <div class="out">
+        <div class="features" style="font-size: 1.1em">
+            <i class="material-icons">perm_identity</i>     <h2 style="font-size: 1.3em; margin:auto 0;">Nickname</h2>
+        </div>
+        </div>
+        <div class="out">
+        <div class="features" style="font-size: 1em; ">
+        <i class="material-icons">event_note</i>     
+            <h3 style="max-width:100%; width: 100%;  normal; margin: auto; overflow-x: visible; display: block;">Date of birth</h3>
+        </div>
+        </div>
         
-        <h3>Phone</h3> 
-    
+        <div class="out">
+        <div class="features" style="font-size: 1em ">
+        <i class="material-icons">my_location</i>     <h3>Address</h3>
+        </div>
+        </div>
+        
+        <div class="out">
+        <div class="features" style="font-size: 1em">
+        <i class="material-icons">mail</i>     <h3>email</h3>
+        </div>
+        </div>
+        
+        <div class="out">
+        <div class="features" style="font-size: 1em">
+        <i class="material-icons">grade</i>     <h3>rating</h3>
+        </div>
+        </div>    
 
-        <div id="socials"><a class="fa fa-instagram" href=" "></a>
-    <a class="fa fa-facebook" href=""></a> <a class="fa fa-twitter" href=""></a>
-                    </div>        
+        <div class="out">
+        <div class="features" style="font-size: 1em">
+        <i class="material-icons">phone</i>     <h3>phone</h3>
+        </div>
+        </div>    
+        </div>
 
+        <div id="socials">
+    <a class="fa fa-facebook" href=""></a>
+    <a class="fa fa-instagram" href=""></a>
+    <a class="fa fa-twitter" href=""></a>
+        
+        </div>
+        
     <div id="chng">
     
-        <span class="icon fa fa-info" onclick="show1();">
-            <h3 style="font: 15px sans-serif">about</h3>
+        <span class="icon" onclick="change1();">
+              <i class=" material-icons" >info</i>
+            <h3 style="font: 15px sans-serif; width: 29%; text-align:left; margin: auto; padding: 0">about</h3>
         </span>
+        <!--
+        <span class="icon" onclick="show2();">
+          <i class=" material-icons">work</i> 
+            <h3 style="font: 15px sans-serif; width: 31.5%; text-align: left; margin: auto;">message</h3>        </span>
+        -->
+         <span class="icon" onclick="change2()">
+             <i class=" material-icons">work
+             </i>
+            <h3 style="font: 15px sans-serif; width: 31.5%; text-align: left; margin: auto;padding: 0;">projects</h3>
+        </span>
+    
         
-        <span class=" fa fa-envelope icon" onclick="show2();">
-        <h3 style="font: 15px sans-serif">message</h3>
-        </span>
-        
-        <span class="icon fa fa-briefcase" onclick="show3()">
-        <h3 style="font: 15px sans-serif;">projects</h3>
-        </span>
-                
     </div>
+        
         </section>
-    
-    <div class="contents">    
-        <div class="con" id="cp3">nospaddfkokom     </div>
+        
+        
+    <section id="content">
+    <div class ="con" id="content1">    
+        
+            
     </div>
-    <!--<div id="contents">
-    <iframe src="Playground-1/index.html" style="max-width: : 100%; width: 100%; background-size: contain; box-sizing: content-box; height: 100vh; scroll-behavior: smooth; overflow-x:hidden; border: none; outline: none;   "></iframe>
+    <div class ="con" id="content2">    
+        
+            
     </div>
-    -->
-    <script type="text/javascript">
-    
-        function show1(){
-    var b = document.getElementById("cp2");
-    var c = document.getElementById("cp3");
-            
-    var a = "In a circle around; all round; on every side of; on the outside of. [First attested prior to 1150.][2]Near; not far from; approximately; regarding time, size, quantity. [First attested prior to 1150.][2] On the point or verge of. the show is about to start;  I am not about to admit to your crimeOn one's person; nearby the person. [First attested around (1150 to 1350.)][2]Over or upon different parts of; through or over in various directions; here and there in; to and fro in; throughout. [First attested around (1150 to 1350.)][2] Concerned with; engaged in; intent on. [First attestedround (1150 to 1350.)][2]Concerning; with regard to; on account of; on the subject of; to affect. [First attested around (1150 to 1350.)][2]He knew more about what was occurring than anyone.Synonyms: apropos, as for; see also Thesaurus:about(figuratively) In or near, as in mental faculties or (literally) in possession of; in control of; at one's command; in one's makeup. [First attested around (1350 to 1470.)][2]He has his wits about him.In the immediate neighborhood of; in contiguity or proximity to; near, as to place. [First attested around (1350 to 1470.)][2] ";
-    var b = document.getElementById("cp2");
-    var c = document.getElementById("cp3");
-    
-            
-            var d= document.getElementsByClassName('con');
-            d.innerhtml=a;
-            /*
-            a.style.left="50%";
-            a.style.opacity="1";
-            b.style.width="0";
-            b.style.opacity="0";
-            c.style.opacity="0";
-            c.style.width="0";*/
-        }
+            </section>
         
         
-        function show2(){
-
-    var b = document.getElementById("cp2");
-    var c = document.getElementById("cp3");
-    var a = "In a circle around; all round; on every side of; on the outside of. [First attested prior to 1150.][2]Near; not far from; approximately; regarding time, size, quantity. [First attested prior to 1150.][2] On the point or verge of. the show is about to start;  I am not about to admit to your crimeOn one's person; nearby the person. [First attested around (1150 to 1350.)][2]Over or upon different parts of; through or over in various directions; here and there in; to and fro in; throughout. [First attested around (1150 to 1350.)][2] Concerned with; engaged in; intent on. [First attestedround (1150 to 1350.)][2]Concerning; with regard to; on account of; on the subject of; to affect. [First attested around (1150 to 1350.)][2]He knew more about what was occurring than anyone.Synonyms: apropos, as for; see also Thesaurus:about(figuratively) In or near, as in mental faculties or (literally) in possession of; in control of; at one's command; in one's makeup. [First attested around (1350 to 1470.)][2]He has his wits about him.In the immediate neighborhood of; in contiguity or proximity to; near, as to place. [First attested around (1350 to 1470.)][2] ";
-    var b = document.getElementById("cp2");
-    var c = document.getElementById("cp3");
+        
+        </main>
+    </div>
+<script src="./js/main.js"></script>
+    <script>
     
-            
-            var d= document.getElementsByClassName('con');
-            d.innerhtml=a;
-            /*
-            a.style.width="0";
-            a.style.opacity="0";
-            b.style.width="70%";
-            b.style.opacity="1";
-            c.style.width="0";
-            c.style.opacity="0";*/
+    
+var a = "this is a random text this is a random text this is a random text this is a random text this is a random text this is a random text this is a random text this is a random text this is a random textthis is a random text this is a random text this is a random text this is a random text this is a random text"; 
+var b = " next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text ";
+    var content = [a, b]; 
+ 
+   function change1(){
+       document.getElementById("content1").innerHTML=content[0];
+   document.getElementById("content1").style.opacity=1;
+document.getElementById("content1").style.display="block";
+        
+   document.getElementById("content2").style.opacity=0;
         }
         
-        function show3(){
-    var a = "In a circle around; all round; on every side of; on the outside of. [First attested prior to 1150.][2]Near; not far from; approximately; regarding time, size, quantity. [First attested prior to 1150.][2] On the point or verge of. the show is about to start;  I am not about to admit to your crimeOn one's person; nearby the person. [First attested around (1150 to 1350.)][2]Over or upon different parts of; through or over in various directions; here and there in; to and fro in; throughout. [First attested around (1150 to 1350.)][2] Concerned with; engaged in; intent on. [First attestedround (1150 to 1350.)][2]Concerning; with regard to; on account of; on the subject of; to affect. [First attested around (1150 to 1350.)][2]He knew more about what was occurring than anyone.Synonyms: apropos, as for; see also Thesaurus:about(figuratively) In or near, as in mental faculties or (literally) in possession of; in control of; at one's command; in one's makeup. [First attested around (1350 to 1470.)][2]He has his wits about him.In the immediate neighborhood of; in contiguity or proximity to; near, as to place. [First attested around (1350 to 1470.)][2] ";
-    var b = document.getElementById("cp2");
-    var c = document.getElementById("cp3");
-    
-            
-            var d= document.getElementsByClassName('con');
-    
-      d.innerhtml=a;        
-        }
+   
+        function change2(){  document.getElementById("content2").innerHTML=content[1];
+               
+   document.getElementById("content2").style.opacity=1;      
+   document.getElementById("content2").style.display="block";      
+   document.getElementById("content1").style.opacity=0;      }
     </script>
 </body>
 </html>
