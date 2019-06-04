@@ -14,6 +14,9 @@
       ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
+}scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
      main{
@@ -21,9 +24,10 @@
          width: 70%;
          max-width: 70% ;
          right: 0;
-         margin: auto;
+         margin:0 auto ;
          position: relative;
          top: 0;
+         text-align: center;
          padding: 3%;
          overflow-y: scroll;
          height: 100%;
@@ -36,7 +40,7 @@
          right: 0;
          height: auto;
          position: relative;
-         margin: ;
+         margin: 0;
          top: 0;
      }
      
@@ -86,22 +90,18 @@
            display: inline-flex;
            justify-content: space-between;
        }
-     div#socials a{
-           text-decoration: none;
-           color: grey;
-           margin:1%;
-         font-size: 2em;
+       div#socials a{
+        font-size: 2em;
+       
          }
-        
-     fa-facebook:hover{
+                
+     a.fa-facebook{
         color:darkblue;
-          
          }
-     fa-twitter:hover{
+     a.fa-twitter{
         color:deepskyblue;
-          
-         }
-     fa-instagram:hover{
+     }
+     a.fa-instagram{
         color: red;
           
          }
@@ -167,8 +167,7 @@
            display: contents;
            position:absolute;
            overflow:hidden;
-           min-height: 250px;
-           margin: auto;
+           margin:10% auto;
            padding: 20px;
            height: auto;
            transition: 1s linear;
@@ -237,8 +236,15 @@
           position: relative;
      width: 100%;   
      }
-     
-     
+        
+        footer{
+          position: absolute;
+     width: 100%;   
+        bottom: 0;
+            text-align: center;
+     }
+    
+         
     @media only screen and (max-width : 750px) {
     .out, .icons, .con{
             transform: scale(.8);
@@ -246,6 +252,7 @@
      
         
       }
+        
      
     </style>
     
@@ -395,7 +402,10 @@ Choose a file to upload: <input name="uploadedfile" type="file"/><br />
         
         
         
-        </main>
+        
+        </main><!--
+    <footer>&copy; Akure tehies community  </footer>
+    -->
     </div>
 <script src="./js/main.js"></script>
     <script>
