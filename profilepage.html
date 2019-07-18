@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akure tech hub - Techies playground</title>
+    <link rel="stylesheet" href="./css/ath-layout.css">
+    <link rel="stylesheet" href="./css/ath.css">
+    <link rel="stylesheet" href="./css/ath-icon.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+      ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+     main{
+         flex-basis: auto;
+         width: 70%;
+         max-width: 70% ;
+         right: 0;
+         margin:0 auto ;
+         position: relative;
+         top: 0;
+         text-align: center;
+         padding: 3%;
+         overflow-y: scroll;
+         height: 100%;
+         
+     }
+     #inline{
+      display: inline-flex;
+         width: 100%;
+         max-width: 100% ;
+         right: 0;
+         height: auto;
+         position: relative;
+         margin: 0;
+         top: 0;
+     }
+     
+     
+       section#top{
+           position: relative;
+           width: 100%;
+           max-width: 100%;
+           font-family: 'Montserrat', sans-serif;
+           font-family: 'Righteous', cursive;
+           margin: auto;
+           top: 0;
+           left: 0;
+           box-sizing: content-box;
+           text-align: center;
+       }
+       section#top div#user-img img{
+           position: relative;
+           width: 100%;
+           height: 100%;
+           border-radius: 50%;
+       }
+       section#top div#user-img{
+           position: relative;
+           width: 30%;
+           min-width: 70px;
+           margin:3% auto 2%;
+           
+       }
+       section#top h3{
+           position: relative;
+           width: 27%;
+           height: 50%;
+           font-weight: 1;
+           font-size: 1em;
+          margin: auto 2%;
+           text-align: start;
+       }
+       div#socials{
+           width: 50%;
+           margin:10% auto;
+           position: relative;
+           text-decoration: none;
+           text-align: center;
+           
+           
+           display: inline-flex;
+           justify-content: space-between;
+       }
+       div#socials a{
+        font-size: 2em;
+       
+         }
+                
+     a.fa-facebook{
+        color:darkblue;
+         }
+     a.fa-twitter{
+        color:deepskyblue;
+     }
+     a.fa-instagram{
+        color: red;
+          
+         }
+     ul#skills{
+           position: relative;
+           width: auto;
+           display: inline-block;
+           height: 50%;
+           padding: 0;
+           align-content: space-between;
+           margin:1% auto ;
+           text-align: center;
+       }
+      ul#skills li{
+           position: relative;
+           width: 100%;
+           padding: 10px;
+           display: inline-block;
+           height: 50%;
+           float: right;
+           margin: auto;
+           
+       }
+       #chng{
+           display:flex;
+           justify-content: space-around;
+           width: 100%;
+           height: auto;
+           position: relative;
+           bottom: 0;
+           flex-basis: 33.35%;
+           background-color: rgb(13,13,13,.4);
+           left: 0;
+           margin: 0;
+       }
+       
+       span.icon{
+           position: relative;
+           margin: auto;
+           text-align: center;
+           width: 33.5%;
+           padding: 15px 0 15px 0;
+           cursor: pointer;
+           font-size: .5em;
+           font-weight: 1000;
+           transition:.2s linear;
+       }
+       span.icon:hover {
+           color:#B1C9E3;
+       }
+     div#info-container{
+           width: 33.5%;
+           position: relative;
+           word-wrap: normal;
+           margin:auto;
+           text-align:start;
+           padding: 0px;
+       } 
+       div.con{
+           width: 100%;
+           max-width: 100%;
+           opacity: 0;
+           display: contents;
+           position:absolute;
+           overflow:hidden;
+           margin:10% auto;
+           padding: 20px;
+           height: auto;
+           transition: 1s linear;
+           text-align: center;
+           padding: 10px;
+           top: 0;
+           background-color: transparent;
+       } 
+       #content{
+           height: auto;
+           width: 70%;
+           position:relative;
+           word-wrap: break-word;
+           margin: auto;
+           left: 50%;
+           transform: translate(-50%);
+           display: block;
+           float: left;
+           top: 0px;
+           flex-grow: 1;
+           background-color: transparent;
+           transition: .6s ease-in;
+       }
+     .icon i.material-icons{
+        
+         text-align: center;
+         position: relative;
+         
+         margin: auto;
+         width: 33.5%;
+        font-size: 7em; 
+       }
+     .features{
+         
+         text-align:start;
+         position: relative;
+         margin: auto;
+         width: 100%;
+         font-size: 1.5em;
+         display: inline-flex;
+         
+       }
+     .features i{
+         
+         text-align: center;
+         position: relative;
+         margin: 0;
+         font-size: 2em;
+         transition:.5s ease;
+         cursor: pointer;
+         line-height: 1.5em;
+         
+       }
+     .features:hover> i{
+       color:  #2A6CB2;
+         
+       }
+     
+      .features h1{
+           height: 50%;
+          margin: auto 0;
+           font-size: 1.4em;
+          line-height: 1em;
+           }
+      .out{
+          position: relative;
+     width: 100%;   
+     }
+        
+        footer{
+          position: absolute;
+     width: 100%;   
+        bottom: 0;
+            text-align: center;
+     }
+    
+         
+    @media only screen and (max-width : 750px) {
+    .out, .icons, .con{
+            transform: scale(.8);
+        }
+     
+        
+      }
+        
+     
+    </style>
+    
+    
+    </head>
+<body class="flex column nowrap">
+    <header class="flex align-items-center ath-header">
+        <div class="flex col-lg-5">
+            <a href="" class="mobile-menu">
+                <i class="icon material-icons">menu</i>
+            </a>
+            <div class="logo-text">
+                <p>Akure Techies Dashboard</p>
+            </div>
+        </div>
+        
+        <div class="flex col-lg-1">
+            <img class="ath-logo" src="./images/logo.svg" alt="">
+        </div>
+    </header>
+    <div id="inline">
+        <aside class="flex column align-items-center ath-aside" style="height: auto; ">
+            <div>
+                <div class="flex justify-content-center align-items-center ath-avatar-holder">
+                    <img class="ath-avatar" src="./images/avatar.jpg" alt="">
+                </div>
+            </div>
+            <nav class="col-lg-6">
+                <menu class="flex column nowrap">
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">assessment</i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">account_circle</i>
+                        Profile
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">settings</i>
+                        Settings
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">date_range</i>
+                        Events
+                    </a>
+                    <a class="ath-link" href="">
+                        <i class="flex icon material-icons">forum</i>
+                        Support
+                    </a>
+                </menu>
+            </nav>
+        </aside>
+        <main>
+
+    <section id="top">
+<div id="user-img"><img src="images/img.png">
+    
+<!--<form enctype="multipart/form-data" action="" method="POST">
+<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+Choose a file to upload: <input name="uploadedfile" type="file"/><br />
+
+</form>-->
+        </div>    
+        <div id="info-container">
+        <div class="out">
+        <div class="features">
+        <i class="material-icons">person</i>     <h1>FullName</h1>
+        </div>
+        </div>
+        <div class="out">
+        <div class="features" style="font-size: 1.1em">
+            <i class="material-icons">perm_identity</i>     <h2 style="font-size: 1.3em; margin:auto 0;">Nickname</h2>
+        </div>
+        </div>
+        <div class="out">
+        <div class="features" style="font-size: 1em; ">
+        <i class="material-icons">event_note</i>     
+            <h3 style="max-width:100%; width: 100%;  normal; margin: auto; overflow-x: visible; display: block;">Date of birth</h3>
+        </div>
+        </div>
+        
+        <div class="out">
+        <div class="features" style="font-size: 1em ">
+        <i class="material-icons">my_location</i>     <h3>Address</h3>
+        </div>
+        </div>
+        
+        <div class="out">
+        <div class="features" style="font-size: 1em">
+        <i class="material-icons">mail</i>     <h3>email</h3>
+        </div>
+        </div>
+        
+        <div class="out">
+        <div class="features" style="font-size: 1em">
+        <i class="material-icons">grade</i>     <h3>rating</h3>
+        </div>
+        </div>    
+
+        <div class="out">
+        <div class="features" style="font-size: 1em">
+        <i class="material-icons">phone</i>     <h3>phone</h3>
+        </div>
+        </div>    
+        </div>
+
+        <div id="socials">
+    <a class="fa fa-facebook" href=""></a>
+    <a class="fa fa-instagram" href=""></a>
+    <a class="fa fa-twitter" href=""></a>
+        
+        </div>
+        
+    <div id="chng">
+    
+        <span class="icon" onclick="change1();">
+              <i class=" material-icons" >info</i>
+            <h3 style="font: 15px sans-serif; width: 29%; text-align:left; margin: auto; padding: 0">about</h3>
+        </span>
+        <!--
+        <span class="icon" onclick="show2();">
+          <i class=" material-icons">work</i> 
+            <h3 style="font: 15px sans-serif; width: 31.5%; text-align: left; margin: auto;">message</h3>        </span>
+        -->
+         <span class="icon" onclick="change2()">
+             <i class=" material-icons">work
+             </i>
+            <h3 style="font: 15px sans-serif; width: 31.5%; text-align: left; margin: auto;padding: 0;">projects</h3>
+        </span>
+    
+        
+    </div>
+        
+        </section>
+        
+        
+    <section id="content">
+    <div class ="con" id="content1">    
+        
+            
+    </div>
+    <div class ="con" id="content2">    
+        
+            
+    </div>
+            </section>
+        
+        
+        
+        
+        </main><!--
+    <footer>&copy; Akure tehies community  </footer>
+    -->
+    </div>
+<script src="./js/main.js"></script>
+    <script>
+    
+    
+var a = "this is a random text this is a random text this is a random text this is a random text this is a random text this is a random text this is a random text this is a random text this is a random textthis is a random text this is a random text this is a random text this is a random text this is a random text"; 
+var b = " next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text  next set of text ";
+    var content = [a, b]; 
+ 
+   function change1(){
+       document.getElementById("content1").innerHTML=content[0];
+   document.getElementById("content1").style.opacity=1;
+document.getElementById("content1").style.display="block";
+        
+   document.getElementById("content2").style.opacity=0;
+        }
+        
+   
+        function change2(){  document.getElementById("content2").innerHTML=content[1];
+               
+   document.getElementById("content2").style.opacity=1;      
+   document.getElementById("content2").style.display="block";      
+   document.getElementById("content1").style.opacity=0;      }
+    </script>
+</body>
+</html>
